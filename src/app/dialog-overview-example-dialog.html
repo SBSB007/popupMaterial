@@ -1,0 +1,12 @@
+<ng-container formArrayName="interests">
+   <div *ngFor="let interest of interests; let i = index">
+      <mat-checkbox class="example-margin" [formControlName]="i">
+         {{interest}}
+      </mat-checkbox>
+   </div>
+</ng-container>
+<br/>
+<mat-label>{{data}}</mat-label>
+<div>
+   <button>Submit</button>
+</div>
